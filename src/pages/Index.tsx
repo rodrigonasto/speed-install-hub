@@ -507,19 +507,6 @@ const Index = () => {
           </p>
 
           {/* Trust badges - card style */}
-          <div className="grid grid-cols-3 gap-2 sm:gap-3 mb-8 max-w-md mx-auto">
-            {[
-              { icon: "💰", label: "Pagamento", highlight: "Único" },
-              { icon: "♾️", label: "Acesso", highlight: "Vitalício" },
-              { icon: "⚡", label: "Entrega", highlight: "Imediata" },
-            ].map((item) => (
-              <div key={item.label} className="bg-background border border-border rounded-xl p-3 text-center">
-                <span className="text-lg block mb-1">{item.icon}</span>
-                <span className="text-[10px] text-muted-foreground block">{item.label}</span>
-                <span className="text-xs font-bold text-primary">{item.highlight}</span>
-              </div>
-            ))}
-          </div>
 
           {/* Search bar */}
           <div className="relative mb-8">
