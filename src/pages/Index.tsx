@@ -282,19 +282,26 @@ const Index = () => {
           <h2 className="text-lg font-bold text-foreground text-center mb-1">
             +80 jogos inclusos no pack
           </h2>
-          <p className="text-muted-foreground text-xs text-center mb-6">
+          <p className="text-muted-foreground text-xs text-center mb-8">
             Todos prontos para jogar no celular
           </p>
-          <div className="grid grid-cols-4 sm:grid-cols-6 gap-1.5 sm:gap-2">
-            {games.map((g) => (
-              <div key={g.name} className="group">
-                <div className="aspect-[3/4] rounded-lg overflow-hidden border border-border/50 group-hover:border-primary/40 transition-colors">
-                  <img src={g.img} alt={g.name} className="w-full h-full object-cover" loading="lazy" />
-                </div>
-                <p className="text-[9px] sm:text-[10px] text-muted-foreground text-center mt-1 truncate leading-tight">{g.name}</p>
+
+          {categories.map((cat) => (
+            <div key={cat.label} className="mb-8 last:mb-0">
+              <h3 className="text-sm font-bold text-foreground mb-3">{cat.label}</h3>
+              <div className="grid grid-cols-4 sm:grid-cols-6 gap-1.5 sm:gap-2">
+                {cat.games.map((g) => (
+                  <div key={g.name} className="group">
+                    <div className="aspect-[3/4] rounded-lg overflow-hidden border border-border/50 group-hover:border-primary/40 transition-colors">
+                      <img src={g.img} alt={g.name} className="w-full h-full object-cover" loading="lazy" />
+                    </div>
+                    <p className="text-[9px] sm:text-[10px] text-muted-foreground text-center mt-1 truncate leading-tight">{g.name}</p>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
+
           <p className="text-muted-foreground text-[10px] text-center mt-4">
             E mais jogos adicionados toda semana!
           </p>
@@ -312,9 +319,15 @@ const Index = () => {
               🔥 Mais vendido
             </span>
 
-            <h2 className="text-xl font-bold text-foreground mb-1">
+            <h2 className="text-xl font-bold text-foreground mb-3">
               Versão Automática + Pack
             </h2>
+
+            {/* Pack image */}
+            <div className="rounded-xl overflow-hidden mb-5">
+              <img src={packImage} alt="Pack com todos os jogos" className="w-full" />
+            </div>
+
             <p className="text-muted-foreground text-xs mb-6">
               Tudo pronto, sem dor de cabeça
             </p>
