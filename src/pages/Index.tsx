@@ -201,6 +201,7 @@ const TutorialSection = () => {
                 className="w-full h-full"
                 src="https://www.youtube.com/embed/VIDEO_ID_ANDROID"
                 title="Tutorial Android"
+                loading="lazy"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />
@@ -220,6 +221,7 @@ const TutorialSection = () => {
                 className="w-full h-full"
                 src="https://www.youtube.com/embed/VIDEO_ID_IOS"
                 title="Tutorial iPhone"
+                loading="lazy"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />
