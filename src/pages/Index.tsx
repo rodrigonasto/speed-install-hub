@@ -287,10 +287,10 @@ const Index = () => {
       <section className="py-16 px-4">
         <div className="container max-w-4xl mx-auto">
           <h2 className="font-display text-xl sm:text-2xl md:text-3xl font-bold text-primary text-glow text-center mb-3">
-            +20 jogos clássicos inclusos no pack
+            +80 jogos clássicos inclusos no pack
           </h2>
           <p className="text-center text-muted-foreground text-sm mb-10">
-            Todos esses jogos vêm prontos para instalar com 1 clique
+            Todos esses jogos vêm prontos para instalar com 1 clique no celular
           </p>
           <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-5 gap-2 sm:gap-3">
             {packGames.map((game) => (
@@ -332,7 +332,7 @@ const Index = () => {
                 { icon: Zap, text: "Instalação automática em 1 clique" },
                 { icon: CheckCircle, text: "Jogo configurado e pronto para rodar" },
                 { icon: Shield, text: "Sem erros ou arquivos faltando" },
-                { icon: Gift, text: "+20 jogos clássicos inclusos (GTA, God of War, NFS...)" },
+                { icon: Gift, text: "+80 jogos clássicos inclusos (GTA, God of War, NFS...)" },
                 { icon: RefreshCw, text: "Atualizações e novos jogos grátis" },
               ].map(({ icon: Icon, text }) => (
                 <li key={text} className="flex items-center gap-3 text-foreground/90 text-sm">
@@ -373,7 +373,7 @@ const Index = () => {
               },
               {
                 q: "Preciso pagar para jogar?",
-                a: "Não. O pagamento é apenas para quem quiser a instalação automática e o pack com +20 jogos extras.",
+                a: "Não. O pagamento é apenas para quem quiser a instalação automática e o pack com +80 jogos extras.",
               },
               {
                 q: "O instalador automático é seguro?",
