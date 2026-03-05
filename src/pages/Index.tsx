@@ -152,7 +152,10 @@ const SocialProofBadge = () => {
 };
 
 const TutorialSection = () => {
-  const [platform, setPlatform] = useState<"android" | "ios">("android");
+  const [platform, setPlatform] = useState<"android" | "ios">(() => {
+    const ua = navigator.userAgent || "";
+    return /iPhone|iPad|iPod/i.test(ua) ? "ios" : "android";
+  });
 
   return (
     <section id="tutorial" className="px-5 pb-10">
