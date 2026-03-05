@@ -411,10 +411,11 @@ const Index = () => {
               </ul>
 
               <div className="text-center mb-1">
-                <span className="text-muted-foreground text-[10px] line-through mr-1">R$97</span>
-                <span className="text-2xl font-extrabold text-foreground">R$47</span>
+                <span className="text-muted-foreground text-[10px] line-through block mb-0.5">De R$97</span>
+                <span className="text-3xl font-extrabold text-foreground">R$47</span>
               </div>
-              <p className="text-muted-foreground text-[9px] text-center mb-3">Pagamento único • Acesso imediato</p>
+              <p className="text-muted-foreground text-[9px] text-center mb-1">Pagamento único • Acesso imediato</p>
+              <p className="text-primary text-[11px] font-semibold text-center mb-3">🎉 Economize R$50 hoje</p>
 
               <a
                 href="#"
@@ -475,8 +476,9 @@ const Index = () => {
                 <span className="text-sm font-bold text-primary">Grátis</span>
               </div>
               <div className="bg-primary/5 p-3 text-center">
-                <span className="text-[10px] text-muted-foreground line-through block">R$97</span>
+                <span className="text-[10px] text-muted-foreground line-through block">De R$97</span>
                 <span className="text-sm font-bold text-primary">R$47</span>
+                <span className="text-[9px] text-primary block mt-0.5">Economize R$50</span>
               </div>
             </div>
           </div>
@@ -592,11 +594,12 @@ const Index = () => {
               ))}
             </ul>
 
-            <div className="mb-1">
-              <span className="text-muted-foreground text-xs line-through mr-1.5">R$97</span>
-              <span className="text-3xl font-extrabold text-foreground">R$47</span>
+            <div className="text-center mb-1">
+              <span className="text-muted-foreground text-xs line-through block mb-1">De R$97</span>
+              <span className="text-4xl font-extrabold text-foreground">R$47</span>
             </div>
-            <p className="text-muted-foreground text-[10px] mb-5">Pagamento único • Acesso imediato</p>
+            <p className="text-muted-foreground text-[10px] mb-1">Pagamento único • Acesso imediato</p>
+            <p className="text-primary text-xs font-semibold mb-5">🎉 Economize R$50 hoje</p>
 
             <a
               href="#"
