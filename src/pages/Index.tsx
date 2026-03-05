@@ -8,26 +8,84 @@ const scrollToSection = (id: string) => {
 };
 
 const packGames = [
-  { name: "GTA San Andreas", img: "https://ksdigital.shop/wp-content/uploads/2025/07/9ff343a1a37c543ff9bc59c574cbea10.jpg" },
-  { name: "GTA V", img: "https://ksdigital.shop/wp-content/uploads/2025/09/LEGACY.png" },
+  { name: "DFL26 Mobile", img: "https://ksdigital.shop/wp-content/uploads/2025/10/2026.png" },
+  { name: "Pack 8 Jogos", img: "https://ksdigital.shop/wp-content/uploads/2025/10/Design-sem-nome-3.png" },
+  { name: "PES eFootball 2026", img: "https://ksdigital.shop/wp-content/uploads/2025/09/Captura-de-tela-2025-09-29-185922.png" },
+  { name: "Bomba Patch 2025", img: "https://ksdigital.shop/wp-content/uploads/2025/09/Captura-de-tela-2025-09-29-192312.png" },
+  { name: "PES 25", img: "https://ksdigital.shop/wp-content/uploads/2025/07/images-39.jpg" },
+  { name: "Bomba Patch Cazé TV", img: "https://ksdigital.shop/wp-content/uploads/2025/07/download-2.jpg" },
+  { name: "PES 2017", img: "https://ksdigital.shop/wp-content/uploads/2025/08/pes-2017-mobile-scaled.webp" },
+  { name: "PES 2012", img: "https://ksdigital.shop/wp-content/uploads/2025/09/PROEVOLUTIONSOCCER2012.jpg" },
+  { name: "PES 2013", img: "https://ksdigital.shop/wp-content/uploads/2025/09/PROEVOLUTIONSOCCER2013.jpg" },
+  { name: "PES 2014", img: "https://ksdigital.shop/wp-content/uploads/2025/07/81HK0XmqEfL._UF8941000_QL80_.jpg" },
+  { name: "eFootball 2024", img: "https://ksdigital.shop/wp-content/uploads/2025/09/eFootball-2024.jpg" },
+  { name: "FC 25 - FIFA14", img: "https://ksdigital.shop/wp-content/uploads/2025/07/images-41.jpg" },
+  { name: "Bomba Patch 2007", img: "https://ksdigital.shop/wp-content/uploads/2025/07/D_NQ_NP_665172-MLB83879911947_042025-O-e1752550275311.webp" },
+  { name: "Bomba Patch 2026", img: "https://ksdigital.shop/wp-content/uploads/2025/09/Celular-Super_Bomba_Patch_2026_V01.fw_.webp" },
   { name: "God of War 2", img: "https://ksdigital.shop/wp-content/uploads/2025/07/6cf9f1c447f889b021b25214731d6bfa-Copia.webp" },
+  { name: "God of War 1", img: "https://ksdigital.shop/wp-content/uploads/2025/07/PT-BR-1-2.png" },
+  { name: "GoW Ghost of Sparta", img: "https://ksdigital.shop/wp-content/uploads/2025/07/PT-BR-1-1.png" },
+  { name: "GoW Chains of Olympus", img: "https://ksdigital.shop/wp-content/uploads/2025/07/PT-BR-3.png" },
+  { name: "GTA V", img: "https://ksdigital.shop/wp-content/uploads/2025/09/LEGACY.png" },
+  { name: "GTA Brasil", img: "https://ksdigital.shop/wp-content/uploads/2025/07/ChatGPT-Image-16-de-jul.-de-2025-23_26_39.png" },
+  { name: "GTA San Andreas", img: "https://ksdigital.shop/wp-content/uploads/2025/07/9ff343a1a37c543ff9bc59c574cbea10.jpg" },
+  { name: "GTA SA Definitive", img: "https://ksdigital.shop/wp-content/uploads/2025/07/cover-1.png" },
+  { name: "GTA Liberty City", img: "https://ksdigital.shop/wp-content/uploads/2025/07/grand-theft-auto-liberty-city-stories-e1751394846496-1.jpg" },
+  { name: "GTA Vice City", img: "https://ksdigital.shop/wp-content/uploads/2025/07/grand-theft-auto-vice-city-stories-e1752552384526.jpg" },
+  { name: "Black + GoW 1", img: "https://ksdigital.shop/wp-content/uploads/2025/07/PT-BR.png" },
+  { name: "Black Hack Edition", img: "https://ksdigital.shop/wp-content/uploads/2025/11/Black-Hack-Edition-Dublado-IA-PT-BR-212x300-1.jpg" },
+  { name: "RE4 + GTA Vice City", img: "https://ksdigital.shop/wp-content/uploads/2025/07/ChatGPT-Image-1-de-jul.-de-2025-16_04_51.png" },
+  { name: "Bully PT-BR", img: "https://ksdigital.shop/wp-content/uploads/2025/07/images-3.jpg" },
+  { name: "Resident Evil 3", img: "https://ksdigital.shop/wp-content/uploads/2025/09/ResidentEvil3-NemesisUSA-image.jpg" },
+  { name: "Silent Hill 3", img: "https://ksdigital.shop/wp-content/uploads/2025/09/SilentHill3USAEnJaFrDeEsItKo-image.jpg" },
+  { name: "Battlefield 2", img: "https://ksdigital.shop/wp-content/uploads/2025/09/Battlefield-2-Modern-Combat-scaled-1.jpg" },
+  { name: "Call of Duty 3", img: "https://ksdigital.shop/wp-content/uploads/2025/09/CallofDuty3USA-image.jpg" },
+  { name: "CoD World at War", img: "https://ksdigital.shop/wp-content/uploads/2025/09/CallofDuty-WorldatWar-FinalFrontsUSAEnFr-image.jpg" },
+  { name: "Red Dead Revolver", img: "https://ksdigital.shop/wp-content/uploads/2025/09/MV5BNTU1MjY1OTkyNF5BMl5BanBnXkFtZTgwNzg5ODAyNTE@._V1_QL75_UX157_.jpg" },
+  { name: "Sniper Elite", img: "https://ksdigital.shop/wp-content/uploads/2025/09/Sniper-Elite-V2-Silver-Star-Edition-300x357-1.jpg" },
+  { name: "Hitman Blood Money", img: "https://ksdigital.shop/wp-content/uploads/2025/09/Hitman-BloodMoneyUSA-image.jpg" },
+  { name: "Medal of Honor", img: "https://ksdigital.shop/wp-content/uploads/2025/09/MedalofHonor-FrontlineUSA-image.jpg" },
+  { name: "MoH Vanguard", img: "https://ksdigital.shop/wp-content/uploads/2025/09/Medal-of-Honor-Vanguard-2.jpg" },
+  { name: "Metal Gear Solid 3", img: "https://ksdigital.shop/wp-content/uploads/2025/09/MetalGearSolid3-SnakeEaterUSA-image.jpg" },
+  { name: "Shadow of Colossus", img: "https://ksdigital.shop/wp-content/uploads/2025/09/ShadowoftheColossusUSA-image.jpg" },
+  { name: "Def Jam Fight", img: "https://ksdigital.shop/wp-content/uploads/2025/09/DEFJAMFIGHTFORNY.jpg" },
+  { name: "Tekken 5", img: "https://ksdigital.shop/wp-content/uploads/2025/07/Tekken_5_capa.png" },
+  { name: "Spider-Man 2", img: "https://ksdigital.shop/wp-content/uploads/2025/07/1c7b75d8ed9271516546560d219ad0b22ee0a263b4537bd8.avif" },
+  { name: "Spider-Man 3", img: "https://ksdigital.shop/wp-content/uploads/2025/07/604880f85fdfa4d069dd4dfabe163639-1-1.jpg" },
+  { name: "Príncipe da Pérsia", img: "https://ksdigital.shop/wp-content/uploads/2025/07/prince-of-persia-the-two-thrones-e1751392952580.webp" },
+  { name: "Marvel Ultimate Alliance", img: "https://ksdigital.shop/wp-content/uploads/2025/07/marvel-ultimate-alliance-2-e1752552624233.webp" },
+  { name: "Inferno de Dante", img: "https://ksdigital.shop/wp-content/uploads/2025/07/dantes-inferno-e1751395418118.jpg" },
+  { name: "Assassin's Creed", img: "https://ksdigital.shop/wp-content/uploads/2025/07/Assassins_Creed_Bloodlines_capa.png" },
+  { name: "25 to Life", img: "https://ksdigital.shop/wp-content/uploads/2025/07/25tolife-1652399533972.jpg" },
+  { name: "Soul Calibur", img: "https://ksdigital.shop/wp-content/uploads/2025/07/Soul-Calibur-Broken-Destiny-1-scaled-e1751349412484.jpg" },
+  { name: "Daxter", img: "https://ksdigital.shop/wp-content/uploads/2025/07/upscalemedia-transformed-scaled-e1751392482643.jpeg" },
+  { name: "Van Helsing", img: "https://ksdigital.shop/wp-content/uploads/2025/11/Captura-de-tela-2025-11-07-032711.png" },
+  { name: "Urban Reign", img: "https://ksdigital.shop/wp-content/uploads/2025/11/51E7QES99ML._SY445_.jpg" },
+  { name: "Darkwatch", img: "https://ksdigital.shop/wp-content/uploads/2025/11/Darkwatch.jpg" },
+  { name: "Midnight Club 3", img: "https://ksdigital.shop/wp-content/uploads/2025/07/Midnight_Club_3_DUB_Edition_capa.jpg" },
+  { name: "NFS Underground 2", img: "https://ksdigital.shop/wp-content/uploads/2025/07/Nfsu2_capa_pt.jpg" },
   { name: "NFS Underground", img: "https://ksdigital.shop/wp-content/uploads/2025/09/Nfsu_capa_pt.jpg" },
   { name: "NFS Most Wanted", img: "https://ksdigital.shop/wp-content/uploads/2025/09/NFSMW_Boxart.webp" },
-  { name: "Midnight Club 3", img: "https://ksdigital.shop/wp-content/uploads/2025/07/Midnight_Club_3_DUB_Edition_capa.jpg" },
-  { name: "Resident Evil 4", img: "https://ksdigital.shop/wp-content/uploads/2025/07/ChatGPT-Image-1-de-jul.-de-2025-16_04_51.png" },
-  { name: "Spider-Man 3", img: "https://ksdigital.shop/wp-content/uploads/2025/07/604880f85fdfa4d069dd4dfabe163639-1-1.jpg" },
-  { name: "Bully", img: "https://ksdigital.shop/wp-content/uploads/2025/07/images-3.jpg" },
-  { name: "Dragon Ball Z", img: "https://ksdigital.shop/wp-content/uploads/2025/07/cover.png" },
-  { name: "Naruto Shippuden 5", img: "https://ksdigital.shop/wp-content/uploads/2025/07/naruto-shippuden-ultimate-ninja-5-turns-15-years-old-today-v0-qpof6pn8l47a1.webp" },
-  { name: "Tekken 5", img: "https://ksdigital.shop/wp-content/uploads/2025/07/Tekken_5_capa.png" },
-  { name: "Burnout 3", img: "https://ksdigital.shop/wp-content/uploads/2025/09/Burnout3-TakedownUSA-image.jpg" },
-  { name: "Mortal Kombat", img: "https://ksdigital.shop/wp-content/uploads/2025/07/favorite-cover-art-from-the-3d-era-v0-c54eu3fg1d8d1.webp" },
-  { name: "Assassin's Creed", img: "https://ksdigital.shop/wp-content/uploads/2025/07/Assassins_Creed_Bloodlines_capa.png" },
-  { name: "God of War 1", img: "https://ksdigital.shop/wp-content/uploads/2025/07/PT-BR-1-2.png" },
-  { name: "Call of Duty 3", img: "https://ksdigital.shop/wp-content/uploads/2025/09/CallofDuty3USA-image.jpg" },
   { name: "Gran Turismo 4", img: "https://ksdigital.shop/wp-content/uploads/2025/09/gran-turismo-4.jpg" },
-  { name: "Guitar Hero III", img: "https://ksdigital.shop/wp-content/uploads/2025/09/GuitarHeroIII-LegendsofRockUSA-image.jpg" },
+  { name: "NFS ProStreet", img: "https://ksdigital.shop/wp-content/uploads/2025/09/NeedforSpeed-ProStreetUSA-image.jpg" },
+  { name: "Burnout 3", img: "https://ksdigital.shop/wp-content/uploads/2025/09/Burnout3-TakedownUSA-image.jpg" },
+  { name: "Vigilante 8", img: "https://ksdigital.shop/wp-content/uploads/2025/09/220px-Vigilante_8.jpg" },
+  { name: "Midnight Club LA", img: "https://ksdigital.shop/wp-content/uploads/2025/07/ChatGPT-Image-1-de-jul.-de-2025-15_13_48-1.png" },
   { name: "NFS Carbon", img: "https://ksdigital.shop/wp-content/uploads/2025/07/71h324tjzmL.jpg" },
+  { name: "MX vs ATV", img: "https://ksdigital.shop/wp-content/uploads/2025/07/mx-vs-atv-untamed-e1751393071211.webp" },
+  { name: "Burnout Dominator", img: "https://ksdigital.shop/wp-content/uploads/2025/07/burnout-dominator-e1752551639342.jpg" },
+  { name: "Downhill Domination", img: "https://ksdigital.shop/wp-content/uploads/2025/11/downhill-domination-button-1652747391683.jpg" },
+  { name: "Driver 2", img: "https://ksdigital.shop/wp-content/uploads/2025/11/Driver_2_Coverart.jpg" },
+  { name: "Naruto Shippuden 5", img: "https://ksdigital.shop/wp-content/uploads/2025/07/naruto-shippuden-ultimate-ninja-5-turns-15-years-old-today-v0-qpof6pn8l47a1.webp" },
+  { name: "Guitar Hero III", img: "https://ksdigital.shop/wp-content/uploads/2025/09/GuitarHeroIII-LegendsofRockUSA-image.jpg" },
+  { name: "Naruto Legends", img: "https://ksdigital.shop/wp-content/uploads/2025/07/naruto-shippuden-legends-akatsuki-rising-e1751395992521.webp" },
+  { name: "Mortal Kombat Unchained", img: "https://ksdigital.shop/wp-content/uploads/2025/07/PT-BR-2.png" },
+  { name: "Dragon Ball BT4", img: "https://ksdigital.shop/wp-content/uploads/2025/07/cover.png" },
+  { name: "DBZ Shin Budokai", img: "https://ksdigital.shop/wp-content/uploads/2025/07/dragon-ball-z-shin-budokai-e1751395100715.jpg" },
+  { name: "Jackie Chan", img: "https://ksdigital.shop/wp-content/uploads/2025/07/MV5BMjQ5YzZhYTUtM2FlOC00NDlkLTlmOTEtNDI1OGNmMTgwZTY4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+  { name: "Os Incríveis", img: "https://ksdigital.shop/wp-content/uploads/2025/07/Os_Incr3Fveis-scaled.webp" },
+  { name: "MK Armageddon", img: "https://ksdigital.shop/wp-content/uploads/2025/07/favorite-cover-art-from-the-3d-era-v0-c54eu3fg1d8d1.webp" },
+  { name: "Ben 10", img: "https://ksdigital.shop/wp-content/uploads/2025/07/Ben_10-_For3Fgena-scaled.webp" },
 ];
 
 const Index = () => {
@@ -46,7 +104,7 @@ const Index = () => {
           <h1 className="font-display text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-black leading-tight text-glow mb-5 text-primary">
             Need for Speed Underground
             <span className="block text-foreground text-lg sm:text-xl md:text-2xl mt-3 font-body font-normal">
-              Baixe agora e jogue no seu PC em minutos
+              Baixe agora e jogue no seu celular em minutos
             </span>
           </h1>
           <p className="text-base sm:text-lg text-muted-foreground max-w-xl mx-auto mb-8">
@@ -69,7 +127,7 @@ const Index = () => {
             </button>
           </div>
           <p className="mt-6 text-muted-foreground text-xs flex items-center justify-center gap-1.5">
-            <Shield className="w-3.5 h-3.5" /> Download seguro • Sem vírus • Funciona no Windows 7/8/10/11
+            <Shield className="w-3.5 h-3.5" /> Download seguro • Sem vírus • Android & iPhone
           </p>
         </div>
         <button
@@ -229,10 +287,10 @@ const Index = () => {
       <section className="py-16 px-4">
         <div className="container max-w-4xl mx-auto">
           <h2 className="font-display text-xl sm:text-2xl md:text-3xl font-bold text-primary text-glow text-center mb-3">
-            +20 jogos clássicos inclusos no pack
+            +80 jogos clássicos inclusos no pack
           </h2>
           <p className="text-center text-muted-foreground text-sm mb-10">
-            Todos esses jogos vêm prontos para instalar com 1 clique
+            Todos esses jogos vêm prontos para instalar com 1 clique no celular
           </p>
           <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-5 gap-2 sm:gap-3">
             {packGames.map((game) => (
@@ -274,7 +332,7 @@ const Index = () => {
                 { icon: Zap, text: "Instalação automática em 1 clique" },
                 { icon: CheckCircle, text: "Jogo configurado e pronto para rodar" },
                 { icon: Shield, text: "Sem erros ou arquivos faltando" },
-                { icon: Gift, text: "+20 jogos clássicos inclusos (GTA, God of War, NFS...)" },
+                { icon: Gift, text: "+80 jogos clássicos inclusos (GTA, God of War, NFS...)" },
                 { icon: RefreshCw, text: "Atualizações e novos jogos grátis" },
               ].map(({ icon: Icon, text }) => (
                 <li key={text} className="flex items-center gap-3 text-foreground/90 text-sm">
@@ -315,7 +373,7 @@ const Index = () => {
               },
               {
                 q: "Preciso pagar para jogar?",
-                a: "Não. O pagamento é apenas para quem quiser a instalação automática e o pack com +20 jogos extras.",
+                a: "Não. O pagamento é apenas para quem quiser a instalação automática e o pack com +80 jogos extras.",
               },
               {
                 q: "O instalador automático é seguro?",
