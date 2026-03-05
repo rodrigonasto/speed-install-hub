@@ -376,12 +376,12 @@ const Index = () => {
                 <span className="text-sm font-bold text-foreground">Grátis</span>
               </div>
 
-              <a
-                href="#"
+              <button
+                onClick={() => navigate("/download")}
                 className="w-full inline-flex items-center justify-center gap-2 border border-border text-foreground font-semibold text-xs py-2.5 rounded-lg hover:bg-muted transition-colors"
               >
                 Baixar manualmente
-              </a>
+              </button>
             </div>
 
             {/* Card 2 — Automático (recomendado) */}
@@ -422,7 +422,9 @@ const Index = () => {
               <p className="text-primary text-[11px] font-semibold text-center mb-3">🎉 Economize R$50 hoje</p>
 
               <a
-                href="#"
+                href="https://pay.lowify.com.br/checkout.php?product_id=KHWzbI"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground font-bold text-sm py-3 rounded-lg hover:brightness-110 transition-all"
               >
                 Instalar e jogar agora
@@ -606,7 +608,9 @@ const Index = () => {
             <p className="text-primary text-xs font-semibold mb-5">🎉 Economize R$50 hoje</p>
 
             <a
-              href="#"
+              href="https://pay.lowify.com.br/checkout.php?product_id=KHWzbI"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground font-bold text-sm py-3.5 rounded-xl hover:brightness-110 transition-all"
             >
               Instalar e jogar agora
