@@ -325,8 +325,7 @@ const Index = () => {
                 ⭐ Recomendado
               </span>
 
-              <h3 className="text-sm font-bold text-foreground mb-1">MEGA PACK COMPLETO</h3>
-              <p className="text-muted-foreground text-[10px] mb-3">Tudo pronto, sem dor de cabeça</p>
+              <h3 className="text-sm font-bold text-foreground mb-3">Instalação automática</h3>
 
               {/* Pack image */}
               <div className="rounded-lg overflow-hidden mb-3 w-3/4 mx-auto">
@@ -335,11 +334,10 @@ const Index = () => {
 
               <ul className="space-y-2 mb-4 flex-1">
                 {[
-                  "Instalação automática em 1 clique",
-                  "Jogo configurado e pronto",
+                  "Instala em 1 clique",
+                  "Jogo já configurado",
+                  "Pack com vários jogos",
                   "Sem erros ou arquivos faltando",
-                  "+80 jogos clássicos inclusos",
-                  "Atualizações e novos jogos grátis",
                 ].map((t) => (
                   <li key={t} className="flex items-start gap-2 text-xs text-foreground">
                     <Check className="w-3.5 h-3.5 text-primary flex-shrink-0 mt-0.5" />
