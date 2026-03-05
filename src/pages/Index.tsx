@@ -1,7 +1,7 @@
 import { useState, useMemo, useEffect } from "react";
 import nfsCover from "@/assets/nfs-cover.png";
 import packImage from "@/assets/pack-image.png";
-import { Download, Check, X, Smartphone, ShieldCheck, Zap, Star, Search } from "lucide-react";
+import { Download, Check, X, Smartphone, ShieldCheck, Zap, Star, Search, ChevronDown } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -334,6 +334,15 @@ const Index = () => {
           <p className="text-muted-foreground text-[11px] mt-3 flex items-center justify-center gap-1">
             <ShieldCheck className="w-3 h-3" /> Download seguro e gratuito
           </p>
+
+          {/* Seta para próxima seção */}
+          <button
+            onClick={() => scrollTo("comparativo")}
+            className="mt-6 mx-auto flex flex-col items-center gap-1 text-muted-foreground hover:text-primary transition-colors animate-bounce"
+            aria-label="Ver mais"
+          >
+            <ChevronDown className="w-6 h-6" />
+          </button>
         </div>
       </section>
 
@@ -430,7 +439,7 @@ const Index = () => {
       </Dialog>
 
       {/* ─── COMPARAÇÃO ─── */}
-      <section className="px-5 py-10">
+      <section id="comparativo" className="px-5 py-10">
         <div className="container max-w-lg mx-auto">
           <h2 className="text-lg font-bold text-foreground text-center mb-2">
             Manual vs Automático
