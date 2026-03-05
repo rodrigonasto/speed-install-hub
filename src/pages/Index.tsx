@@ -631,7 +631,7 @@ const Index = () => {
           <div className="space-y-3">
             {[
               { q: "O download é gratuito?", a: "Sim, você pode baixar e instalar o jogo gratuitamente." },
-              { q: "Preciso pagar para jogar?", a: "Não. O pagamento é só para quem quer instalação automática e o pack com +80 jogos." },
+              { q: "Preciso pagar para jogar?", a: "Não. O pagamento é só para quem quer instalação automática e o pack com +100 jogos." },
               { q: "O instalador automático é seguro?", a: "Sim, ele apenas automatiza a instalação para facilitar." },
               { q: "Quais jogos vêm no pack?", a: "GTA, God of War, NFS, Dragon Ball, Naruto, Spider-Man, Tekken, e muitos outros clássicos." },
             ].map(({ q, a }) => (
