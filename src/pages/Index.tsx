@@ -117,6 +117,31 @@ const categories = [
 ];
 
 const Index = () => {
+  const [searchQuery, setSearchQuery] = useState("");
+  const [activeCategory, setActiveCategory] = useState("Todos");
+
+  const categoryLabels = ["Todos", ...categories.map(c => c.label)];
+
+  const filteredCategories = useMemo(() => {
+    const query = searchQuery.toLowerCase().trim();
+    let filtered = categories;
+
+    if (activeCategory !== "Todos") {
+      filtered = filtered.filter(c => c.label === activeCategory);
+    }
+
+    if (query) {
+      filtered = filtered
+        .map(cat => ({
+          ...cat,
+          games: cat.games.filter(g => g.name.toLowerCase().includes(query)),
+        }))
+        .filter(cat => cat.games.length > 0);
+    }
+
+    return filtered;
+  }, [searchQuery, activeCategory]);
+
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
 
