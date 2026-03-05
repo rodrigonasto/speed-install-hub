@@ -134,13 +134,13 @@ const SocialProofBadge = () => {
   }, []);
 
   return (
-    <span className="inline-flex items-center gap-2 bg-primary/90 text-primary-foreground text-xs font-bold px-5 py-2 rounded-full mb-5 shadow-lg shadow-primary/25">
+    <div className="inline-flex items-center gap-2 text-xs font-bold px-5 py-2.5 rounded-full mb-5" style={{ backgroundColor: '#0D0D0D', color: '#FFFFFF' }}>
       <span className="relative flex h-2 w-2">
-        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
-        <span className="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
+        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
+        <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
       </span>
-      <span className="tabular-nums">{count}</span> pessoas compraram na última hora
-    </span>
+      🟢 Jogadores baixando agora
+    </div>
   );
 };
 
