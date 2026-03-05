@@ -456,7 +456,7 @@ const Index = () => {
             {[
               ["Instalação demorada", "Instala em 1 clique"],
               ["Configuração manual", "Jogo pronto para jogar"],
-              ["Apenas 1 jogo", "Pack com vários jogos"],
+              ["Apenas 1 jogo", "Biblioteca com +100 jogos"],
             ].map(([manual, auto], i) => (
               <div key={i} className="grid grid-cols-2">
                 <div className="bg-card/50 border-b border-r border-border p-3 flex items-center gap-2">
