@@ -341,7 +341,7 @@ const Index = () => {
             className="mt-6 mx-auto flex flex-col items-center gap-1 text-muted-foreground hover:text-primary transition-colors animate-bounce"
             aria-label="Ver mais"
           >
-            <span className="text-4xl">⬇️</span>
+            <ArrowDown className="w-10 h-10" />
           </button>
         </div>
       </section>
