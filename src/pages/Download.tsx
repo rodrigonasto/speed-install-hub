@@ -194,6 +194,7 @@ const DownloadPage = () => {
               className="w-full h-full"
               src={`https://www.youtube.com/embed/${platform === "android" ? "VIDEO_ID_ANDROID" : "VIDEO_ID_IOS"}`}
               title={`Tutorial ${platform === "android" ? "Android" : "iPhone"}`}
+              loading="lazy"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
