@@ -131,8 +131,12 @@ const SocialProofBadge = () => {
   }, []);
 
   return (
-    <span className="inline-flex items-center gap-1.5 bg-red-500/15 text-red-400 text-[11px] font-bold uppercase tracking-wider px-4 py-1.5 rounded-full mb-5 animate-pulse">
-      🔥 <span className="tabular-nums">{count}</span> pessoas compraram na última hora
+    <span className="inline-flex items-center gap-2 bg-primary/90 text-primary-foreground text-xs font-bold px-5 py-2 rounded-full mb-5 shadow-lg shadow-primary/25">
+      <span className="relative flex h-2 w-2">
+        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+        <span className="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
+      </span>
+      <span className="tabular-nums">{count}</span> pessoas compraram na última hora
     </span>
   );
 };
