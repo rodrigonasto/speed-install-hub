@@ -2,6 +2,13 @@ import { useState, useMemo, useEffect } from "react";
 import nfsCover from "@/assets/nfs-cover.png";
 import packImage from "@/assets/pack-image.png";
 import { Download, Check, X, Smartphone, ShieldCheck, Zap, Star, Search } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+} from "@/components/ui/dialog";
 
 const scrollTo = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
 
