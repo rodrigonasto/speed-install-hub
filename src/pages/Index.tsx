@@ -116,6 +116,27 @@ const categories = [
   },
 ];
 
+const SocialProofBadge = () => {
+  const [count, setCount] = useState(Math.floor(Math.random() * 15) + 18);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCount(prev => {
+        const change = Math.random() > 0.4 ? 1 : -1;
+        const next = prev + change;
+        return Math.max(14, Math.min(47, next));
+      });
+    }, Math.random() * 3000 + 2500);
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <span className="inline-flex items-center gap-1.5 bg-red-500/15 text-red-400 text-[11px] font-bold uppercase tracking-wider px-4 py-1.5 rounded-full mb-5 animate-pulse">
+      🔥 <span className="tabular-nums">{count}</span> pessoas compraram na última hora
+    </span>
+  );
+};
+
 const Index = () => {
   const [searchQuery, setSearchQuery] = useState("");
 
