@@ -1,4 +1,5 @@
 import { useState, useMemo, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import nfsCover from "@/assets/nfs-cover.png";
 import packImage from "@/assets/pack-image.png";
 import { Download, Check, X, Smartphone, ShieldCheck, Zap, Star, Search, ArrowDown } from "lucide-react";
@@ -236,6 +237,7 @@ const TutorialSection = () => {
 const Index = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [downloadModalOpen, setDownloadModalOpen] = useState(false);
+  const navigate = useNavigate();
 
   const filteredCategories = useMemo(() => {
     const query = searchQuery.toLowerCase().trim();
