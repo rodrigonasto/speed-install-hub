@@ -115,14 +115,14 @@ const StepCard = ({ item }: { item: StepItem }) => (
     {/* Download button */}
     <a
       href={item.link}
-      className={`ml-11 inline-flex items-center gap-2 font-bold text-sm px-5 py-3 rounded-xl transition-all ${
+      className={`ml-11 flex items-center gap-2 font-bold text-xs sm:text-sm px-4 sm:px-5 py-3 rounded-xl transition-all w-fit ${
         item.isMain
           ? "bg-primary text-primary-foreground hover:brightness-110 shadow-[0_0_16px_-2px_hsl(var(--primary)/0.4)]"
           : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
       }`}
     >
-      <Download className="w-4 h-4" />
-      {item.buttonLabel}
+      <Download className="w-4 h-4 shrink-0" />
+      <span>{item.buttonLabel}</span>
     </a>
   </div>
 );
