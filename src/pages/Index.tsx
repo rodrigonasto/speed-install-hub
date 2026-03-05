@@ -388,7 +388,7 @@ const Index = () => {
                 🔥 Mais escolhido pelos jogadores
               </span>
 
-              <h3 className="text-sm font-bold text-foreground mb-3 text-center">Instalação automática + Pack completo de jogos</h3>
+              <h3 className="text-sm font-bold text-foreground mb-3 text-center">👉 Instalação automática + Biblioteca gamer (+100 jogos)</h3>
 
               {/* Pack image */}
               <div className="rounded-lg overflow-hidden mb-3 w-3/4 mx-auto">
@@ -567,7 +567,7 @@ const Index = () => {
             <SocialProofBadge />
 
             <h2 className="text-xl font-bold text-foreground mb-3">
-              Instalação automática + Pack completo de jogos
+              👉 Instalação automática + Biblioteca gamer (+100 jogos)
             </h2>
 
             {/* Pack image */}
