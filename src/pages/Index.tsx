@@ -158,6 +158,18 @@ const TutorialSection = () => {
     return /iPhone|iPad|iPod/i.test(ua) ? "ios" : "android";
   });
 
+  useEffect(() => {
+    if (platform === "ios") {
+      const exists = document.querySelector('script[src*="69aa29eea584f1a405f84d6b"]');
+      if (!exists) {
+        const s = document.createElement("script");
+        s.src = "https://scripts.converteai.net/a57aea77-33e9-4609-ae0f-96bf93c595a1/players/69aa29eea584f1a405f84d6b/v4/player.js";
+        s.async = true;
+        document.head.appendChild(s);
+      }
+    }
+  }, [platform]);
+
   return (
     <section id="tutorial" className="px-5 pb-10">
       <div className="container max-w-lg mx-auto">
@@ -214,7 +226,6 @@ const TutorialSection = () => {
 
         {/* iOS Content */}
         {platform === "ios" && (
-          <VturbPlayer />
           <div className="space-y-4">
             <h3 className="text-base font-bold text-foreground text-center">Tutorial iPhone (iOS)</h3>
             <div className="rounded-2xl overflow-hidden bg-card border border-border">
