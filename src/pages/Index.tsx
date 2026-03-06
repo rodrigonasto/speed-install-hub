@@ -555,7 +555,7 @@ const Index = () => {
                 {cat.games.map((g) => (
                   <div key={g.name} className="group">
                     <div className="aspect-[3/4] rounded-lg overflow-hidden border border-border/50 group-hover:border-primary/40 transition-colors">
-                      <img src={g.img} alt={g.name} className="w-full h-full object-cover" loading="lazy" />
+                      <img src={g.img} alt={g.name} className="w-full h-full object-cover" loading="lazy" decoding="async" />
                     </div>
                     <p className="text-[9px] sm:text-[10px] text-muted-foreground text-center mt-1 truncate leading-tight">{g.name}</p>
                   </div>
