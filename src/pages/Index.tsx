@@ -217,7 +217,11 @@ const TutorialSection = () => {
           <div className="space-y-4">
             <h3 className="text-base font-bold text-foreground text-center">Tutorial iPhone (iOS)</h3>
             <div className="rounded-2xl overflow-hidden bg-card border border-border">
-              <vturb-smartplayer id="vid-69aa29eea584f1a405f84d6b" style={{ display: 'block', margin: '0 auto', width: '100%', maxWidth: '400px' }}></vturb-smartplayer>
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: '<vturb-smartplayer id="vid-69aa29eea584f1a405f84d6b" style="display:block;margin:0 auto;width:100%;max-width:400px;"></vturb-smartplayer>'
+                }}
+              />
             </div>
             <p className="text-muted-foreground text-xs text-center">
               ⚠️ O tutorial usa outro jogo como exemplo, mas o processo de instalação é o mesmo.
