@@ -280,6 +280,7 @@ const Index = () => {
               src={nfsCover}
               alt="Need for Speed Underground 2"
               className="w-full rounded-2xl shadow-[0_20px_80px_-10px_rgba(34,197,94,0.25),0_10px_40px_-10px_rgba(0,0,0,0.7)] border border-primary/20"
+              decoding="async"
             />
           </div>
 
@@ -407,7 +408,7 @@ const Index = () => {
 
               {/* Pack image */}
               <div className="rounded-lg overflow-hidden mb-3 w-3/4 mx-auto">
-                <img src={packImage} alt="Pack com todos os jogos" className="w-full" />
+                <img src={packImage} alt="Pack com todos os jogos" className="w-full" loading="lazy" decoding="async" />
               </div>
 
               <ul className="space-y-2 mb-4 flex-1">
@@ -589,7 +590,7 @@ const Index = () => {
 
             {/* Pack image */}
             <div className="rounded-xl overflow-hidden mb-5">
-              <img src={packImage} alt="Pack com todos os jogos" className="w-full" />
+              <img src={packImage} alt="Pack com todos os jogos" className="w-full" loading="lazy" decoding="async" />
             </div>
 
             <p className="text-muted-foreground text-xs mb-6">
